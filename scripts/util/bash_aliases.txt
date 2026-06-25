@@ -1,0 +1,6 @@
+# START: dev-env-wsl
+alias source='source ~/.bashrc'
+alias lsa='ls -la'
+alias weather='curl wttr.in'
+alias unzip='tar -zxvf $1'
+# END: dev-env-wsl
