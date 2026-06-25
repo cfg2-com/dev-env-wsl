@@ -2,6 +2,7 @@
 
 TO="${1}"
 MSG="${2}"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
 if [[ -z "$TO" ]]; then
     read -rp "Enter the recipient phone number or group name: " TO
@@ -12,8 +13,8 @@ if [[ -z "$MSG" ]]; then
 fi
 
 if [[ "$TO" == +* ]]; then
-    ./person.sh "$TO" "$MSG"
+    "$SCRIPT_DIR/person.sh" "$TO" "$MSG"
 else
-    ./group.sh "$TO" "$MSG"
+    "$SCRIPT_DIR/group.sh" "$TO" "$MSG"
 fi
 
