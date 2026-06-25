@@ -1,3 +1,5 @@
-./install-qrencode.sh
+./../install-qrencode.sh
 
-./install-java.sh
+./../install-java.sh
+
+./../install-jq.sh
