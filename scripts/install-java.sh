@@ -1,0 +1,1 @@
+sudo apt install openjdk-25-jdk
